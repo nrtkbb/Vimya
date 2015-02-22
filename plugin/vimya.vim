@@ -469,7 +469,7 @@ def vimyaRun (forceBuffer = False, userCmd = None):
 
     global __vimyaLogPath, __vimyaTempFiles
 
-    filetype = vim.eval ('&g:filetype')
+    filetype = vim.eval ('&filetype')
     if filetype not in ['', 'mel', 'python']:
         return __vimyaError ('Error: Supported filetypes: "python", "mel", None.')
 
